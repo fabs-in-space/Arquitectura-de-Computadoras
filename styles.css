@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1.2rem 2rem;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3); /* Negro con 20% de transparencia */
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+
+}
+.logo-main {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    top: 130px;
+}
+.nav-items {
+    display: flex;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+a {
+    font-family: Montserrat;
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Establece una altura mínima */
+    padding-bottom: 130px; /* Para que los botones no se superpongan */
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.hero-container {
+    font-family: Montserrat;
+    text-align: center;
+    color: white;
+}
+
+.title-Innoix {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Montserrat;    font-size: 2rem;}
+
+p {    font-size: 1.2rem;}
+
+.text-future, .text-hands {    color: #FFD74B;}
+
+.text-agriculture {    color: #84D464;}
+
+.section-buttons {
+    position: absolute;
+    bottom: 30px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2em;
+}
+
+.button-settings, .button-report {
+    background-color: #84D464;
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    width: 15rem;
+    border-radius: 10px;
+    transition: all 0.8s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-settings:hover, .button-report:hover {
+    background-color: #52B0E5;
+    width: 16rem;
+}
+
+.button-settings img, .button-report img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.header-settings{
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.body-settings {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alínea hacia arriba */
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+
+.temperature-settings{
+    border-radius: 10px;
+    border-width: 2px;  border-style:solid;
+    border-color: #84D464;
+    order: 2;
+    padding: 1em 3.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 3em 1.3em 1.3em; 
+}
+
+.left-column-settings{
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+
+.title-settings {
+    color: #52B0E5;
+    font-size: 2rem; /* Tamaño base */
+    position: relative;
+    display: inline-block;
+    margin: 1em 0; /* Espaciado alrededor del título */
+}
+
+.title-settings::before, .title-settings::after {
+    content: '';
+    display: inline-block;
+    width: 250px;
+    height: 2px;
+    background-color: #52B0E5;
+    vertical-align: middle;
+    margin: 0 35px;
+}
+h5{font-size: 1.2rem;}
+
+.buttons-filers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+select {
+    font-family: Montserrat;
+    background-color: #e5f3ff;
+    border: 1px solid #52B0E5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    margin-right: 1em;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #d0e9ff;
+    border-color: #84D464;
+}
+
+.temperature-settings form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Ajusta el espacio entre los botones */
+}
+
+.temperature-settings form label {
+    margin-right: 10px; /* Espacio entre el radio button y la etiqueta */
+}
+.temperature-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.temperature-max-min{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    padding: 1em 3.3em;
+
+}
+.temperature-max, .temperature-min{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.temperature-controls button {
+    background-color: #84D464;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.temperature-controls button:hover {
+    background-color: #52B0E5;
+}
+
+#current-temp {
+    font-size: 2rem;
+    color: #52B0E5;
+}
+
+.text20, .text30{
+    margin-top: 0.5em; 
+}
+@media (max-width: 768px) {
+    .hero {
+        background-size: 150% auto; 
+    }
+    
+    .logo-main {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .section-buttons {
+        bottom: 50px; 
+        gap: 1rem;
+    }
+
+    .button-settings, .button-report {
+        width: 9rem; 
+        padding: 0.8rem;
+    }
+    .title-settings {
+        font-size: 1.5rem; 
+        margin: 0.8em 0; 
+    }
+
+    .title-settings::before, .title-settings::after {
+        width: 100px; 
+        margin: 0 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: 180% auto; 
+    }
+
+    .logo-main {
+        width: 90px; 
+        height: 90px;
+    }
+
+    .section-buttons {
+        bottom: 20px;
+    }
+
+    .button-settings, .button-report {
+        width: 7rem; 
+        padding: 0.5rem;
+    }
+    .title-settings {
+        font-size: 1.2rem; 
+        margin: 0.5em 0; 
+    }
+
+    .title-settings::before, .title-settings::after {
+        width: 80px; 
+        margin: 0 15px; 
+    }
+}

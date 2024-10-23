@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Innoix - El futuro de la agricultura en tus manos.">
+    <meta name="keywords" content="Innoix, invernaderos, control temperatura, remoto">
+    <meta name="author" content="Innoix">
+    <title>Innoix - El futuro de la agricultura en tus manos</title>
+
+    <!-- Fuentes --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Estilos --> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="/img/A-removebg-preview 1.svg" alt="logo-innoix" title="logo-innoix"></a>
+        </div>
+        <div class="nav-items">
+            <a href="#">Inicio</a>
+            <a href="#">¿Quiénes somos?</a>
+            <a href="#">Servicios</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <img class="logo-main" src="/img/A-removebg-preview 1.svg" alt="logo-innoix" title="logo-innoix">
+            <div class="quotes">
+                <h1 class="title-Innoix">Innoix</h1>
+                <h3>El <span class="text-future">futuro</span> de la <span class="text-agriculture">agricultura</span> en tus <span class="text-hands">manos</span></h3>
+                <p>Controla el clima de tu invernadero de manera <br> precisa, eficiente y desde cualquier lugar</p>
+            </div>
+        </div>
+        
+        <div class="section-buttons">
+            <section class="button-settings">
+                <img class="logo" src="/img/configuration.svg" alt="icon-configuration" title="icon-configuration">
+                <h4>Configuración de <br> Invernadero</h4>
+            </section>
+
+            <section class="button-report">
+                <img class="logo" src="/img/report.svg" alt="icon-report" title="icon-report">
+                <h4>Reporte de <br> monitoreo</h4>
+            </section>
+        </div>
+    </section>
+
+    <section class="Settings">
+        <div class="header-settings">
+            <h3 class="title-settings">Control del invernadero</h3>
+            <div class="buttons-filters">
+                <label for="greenhouse"></label>
+                <select name="type-greenhouse" id="greenhouse">
+                    <option value="1">Invernadero 1</option>
+                    <option value="2">Invernadero 2</option>
+                    <option value="3" selected>Invernadero 3</option>
+                    <option value="4">Invernadero 4</option>
+                </select>
+    
+                <label for="function"></label>
+                <select name="type-function" id="function">
+                    <option value="humity">Humedad</option>
+                    <option value="temperature" selected>Temperatura</option>
+                
+                </select>
+
+
+            </div>
+            
+        </div>
+
+        <div class="body-settings">
+            
+            <div class="temperature-settings">
+                <h5>Unidad de temperatura</h5>
+                
+                    <form>
+                        <input type="radio" id="celcius" name="unit-selected" value="°C">
+                        <label for="°C">°C</label><br>
+    
+                        <input type="radio" id="fahrenheit" name="unit-selected" value="°F">
+                        <label for="°F">°F</label><br>
+                    </form>
+                
+
+                <h5>Temperatura actual</h5>
+                <div class="temperature-controls">
+                    <button id="decrease-temp">▼</button>
+                    <span id="current-temp">23.0°C</span>
+                    <button id="increase-temp">▲</button>
+                </div>
+                <div class="temperature-max-min">
+                    <div class="temperature-max">
+                        <h5>Temperatura <br>mínima</h5>
+                        <p class="text20">20°C</p>
+                    </div>
+                    <div class="temperature-min">
+                        <h5>Temperatura <br> máxima</h5>
+                        <p class="text30">30°C</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column-settings">
+                <img class="map" src="/img/plis2.svg" alt="map-greenhouse" title="map-greenhouse">
+                <p class="title-map">Mapa invernadero</p>
+                <br><br>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+</body>
+</html>
